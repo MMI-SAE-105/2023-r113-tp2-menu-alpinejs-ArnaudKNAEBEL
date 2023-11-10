@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <html lang="fr" x-data="{menuIsOpen: false}">
 
 </html>
@@ -19,7 +18,14 @@
     btn{menu}
     <button>aria-controls="mainNav" menu </button>
     <h1>Test de menu</h1>
-    nav#mainNav>ul>li*3>a[href="#"]{item $}
+    <nav id="mainNav" (×-show="menuIsOpen" )>
+      <ul>
+        <li><a href="#">item 1</a></li>
+        <li><a href="#">item 2</a></li>
+        <li><a href="#">item 3</a></li>
+      </ul>
+
+    </nav>
   </header>
   <!-- h2>lorem2^p>lorem -->
   <h2>Lorem, ipsum.</h2>
